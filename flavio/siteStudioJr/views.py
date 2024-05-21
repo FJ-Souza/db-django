@@ -24,3 +24,6 @@ def agendar_secao(request):
 def listar_clientes(request):
     lista = Cliente.objects.all()
     return render(request,'listar_clientes.html', {'lista': lista})
+
+def senai(request):
+    return render(request,'senai.html')
